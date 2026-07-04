@@ -58,7 +58,7 @@ export default function Contact() {
     toast.loading("Sending your enquiry...");
 
     try {
-      await axios.post("http://localhost:5000/api/contact", {
+      await axios.post("https://superguard-dulwich-backend.vercel.app/api/contact", {
         ...formData,
         area: LOCAL.area,
         business: LOCAL.businessName,
